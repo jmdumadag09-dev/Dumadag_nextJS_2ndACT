@@ -1,11 +1,16 @@
-export default function Home(){
-  return(
-    <main className="p-8">
-      <h1 className="text-3xl font-bold">
-        Hi, I'm Jian Marc Dumadag
+// app/page.tsx
+import Link from "next/link";
 
-      </h1>
+export default function Home() {
+  return (
+    <main>
+      <h1>Hello, my name is Jian Marc Dumadag</h1>
 
+      <p>I am a BSIT student. I created this website for educational purposes.</p>
+
+      <Link href="/projects" className="mt-4 inline-block underline">
+        See my projects
+      </Link>
     </main>
-  )
+  );
 }
